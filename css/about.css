@@ -1,0 +1,116 @@
+#about {
+    padding-top: 220px;
+    padding-bottom: 80px;
+    background-color: #FAFAFA;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* display: none; */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about__title {
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px; /* 142.5% */
+    letter-spacing: 0.2px;
+    margin-bottom: 10px;
+}
+
+.about__text {
+    max-width: 511px;
+    color: var(--second-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+    margin-bottom: 50px;
+}
+
+.about__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+}
+
+.about__card {
+    padding: 30px;
+    background-color: var(--light-text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 22%;
+    transition: all .3s ease-out;
+}
+
+.about__card-img {
+    height: 43px;
+}
+
+.about__card-title {
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px; /* 142.5% */
+    letter-spacing: 0.2px;
+}
+
+.about__card-text {
+    color: var(--second-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.about__card:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 1200px) {
+    .about__card-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1074px) {
+    .about__card-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 951px) {
+    .about__card-text {
+        font-size: 9px;
+    }
+
+    .about__card-title {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 934px) {
+    .about__card {
+        width: 47%;
+    }
+}

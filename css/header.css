@@ -1,0 +1,119 @@
+/* backtop */
+
+#backtop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 17px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    position: fixed;
+    bottom: 21px;
+    right: 21px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+}
+
+.up-arrow {
+    color: #fff;
+}
+
+.show-backtop {
+    display: flex !important;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 24px 0;
+    background-color: white;
+}
+
+.navbar-shrink {
+    box-shadow: 0 0 10px rgb(197, 197, 197);
+}
+
+.nav__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.1px;
+}
+
+.nav__list {
+    display: flex;
+    align-items: center;
+    gap: 21px;
+}
+
+.nav__link {
+    color: var(--second-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 171.429% */
+    letter-spacing: 0.2px;
+    transition: all .3s ease-in-out;;
+}
+
+.nav__link:hover {
+    color: var(--link-hover-color);
+}
+
+.hamburger__btns {
+    display: none;
+}
+
+.hamburger__btn {
+    border: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamburger__btn span {
+    border-radius: 3px;
+    width: 20px;
+    height: 2px;
+    background-color: var(--second-color);
+}
+
+@media (max-width: 620px) {
+    .nav__list {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 40%;
+        height: 100vh;
+        background-color: white;
+        flex-direction: column;
+        justify-content: start;
+        padding-top: 40px;
+        box-shadow: 0 0 10px rgb(197, 197, 197);
+        transition: all 0.5s ease-in-out;
+    }
+
+    .hamburger__btns {
+        display: block;
+    }
+}
+
+.show-nav-list {
+    left: 0;
+}

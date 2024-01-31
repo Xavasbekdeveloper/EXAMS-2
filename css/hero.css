@@ -1,0 +1,237 @@
+
+#hero {
+    background-image: url(../images/hero-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 185px;
+}
+
+.hero-container {
+    position: relative;
+}
+
+.hero__title {
+    max-width: 509px;
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 80px; /* 137.931% */
+    letter-spacing: 0.2px;
+    margin-bottom: 35px;
+}
+
+.hero__text {
+    max-width: 376px;
+    color: var(--second-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; /* 150% */
+    letter-spacing: 0.2px;
+    margin-bottom: 35px;
+    -webkit-line-clamp: 2;
+}
+
+.hero__btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero__btn {
+    padding: 10px 36px;
+    border-radius: 37px;
+    border: 1px solid var(--btn-color);
+    background-color: transparent;
+    color: var(--btn-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    letter-spacing: 0.2px;
+    transition: all .4s ease-in-out;
+}
+
+.hero__btn:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    color: var(--light-text-color);
+}
+
+.hero__cards {
+    position: absolute;
+    bottom: -290px;
+    left: 1px;
+    display: flex;  
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+}
+
+.hero__card {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    padding: 35px 40px;
+    width: 32%;
+    background-color: var(--light-text-color);
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    transition: all .4s ease-in-out;
+}
+
+.hero__card img {
+    height: 40px;
+}
+
+.hero__card-img {
+    display: none;
+}
+
+.hero__card-title {
+    color: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: 0.1px;
+}
+
+.hero__card-text {
+    max-width: 218px;
+    color: var(--second-color);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+    letter-spacing: 0.2px;
+}
+
+.hero__card:hover {
+    background-color: var(--btn-color);
+}
+
+.hero__card:hover .hero__card-img {
+    display: block;
+}
+
+.hero__card:hover .hero__card__img {
+    display: none;
+}
+
+.hero__card:hover .hero__card-title, 
+.hero__card:hover .hero__card-text {
+    color: var(--light-text-color);
+}
+
+
+@media (max-width: 1292px) {
+    .hero__card-title {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1189px) {
+    .hero__card-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1126px) {
+    .hero__card-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1075px) {
+    .hero__card-text {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1043px) {
+    .hero__card-title {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 961px) {
+    .hero__card-title {
+        font-size: 12px;
+    }
+
+    .hero__card-text {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 878px) {
+    #hero {
+        padding-top: 10px;
+    }
+
+    .hero__top {
+        padding-top: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+    .hero__title, .hero__text {
+        text-align: center;
+    }
+
+    .hero__cards {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero__card {
+        width: 47%;
+    }
+
+    .hero__card-title {
+        font-size: 16px;
+    }
+
+    .hero__card-text {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 704px) {
+    .hero__title {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .hero__cards {
+        flex-direction: column;
+    }
+
+    .hero__card {
+        width: 70%;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero__btns {
+        flex-direction: column;
+    }
+
+    .hero__card {
+        width: 80%;
+    }
+}

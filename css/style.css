@@ -1,0 +1,21 @@
+/* @import url(./reset.css);
+@import url(./fonts.css);
+@import url(./variables.css);
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./about.css);
+@import url(./advice.css);
+@import url(./services.css);
+@import url(./contact.css);
+@import url(./footer.css); */
+
+@import url(./minifer/reset-min.css);
+@import url(./minifer/font-min.css);
+@import url(./minifer/variables-min.css);
+@import url(./minifer/header-min.css);
+@import url(./minifer/hero-min.css);
+@import url(./minifer/about-min.css);
+@import url(./minifer/advice-min.css);
+@import url(./minifer/services-min.css);
+@import url(./minifer/contact-min.css);
+@import url(./minifer/footer-min.css);
